@@ -1,18 +1,21 @@
 import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-// if (process.env.NODE_ENV !== 'production') {
-//   const {whyDidYouUpdate} = require('why-did-you-update');
-//   whyDidYouUpdate(React, {
-//     exclude: [
-//       'withOrientation',
-//       'Transitioner',
-//       'ViewPagerAndroid',
-//       'StackViewLayout',
-//       'YellowBoxListRow',
-//       'TouchableText',
-//     ],
-//   });
-// }
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Open up App.js to start working on your app!</Text>
+      </View>
+    );
+  }
+}
 
-import App from '@/components/App';
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
