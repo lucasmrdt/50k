@@ -34,10 +34,16 @@
     "@feathersjs/express": "^1.2.7",
     "@feathersjs/feathers": "^3.2.3",
     "@feathersjs/socketio": "^3.2.6",
+    "axios": "^0.18.0",
     "compression": "^1.7.3",
     "cors": "^2.8.4",
+    "feathers-mongoose": "^6.2.0",
+    "google-translate-api": "^2.3.0",
     "helmet": "^3.14.0",
+    "mongodb-core": "^3.1.5",
+    "mongoose": "^5.2.16",
     "serve-favicon": "^2.5.0",
+    "translate": "^1.0.3",
     "winston": "^3.1.0"
   },
   "devDependencies": {

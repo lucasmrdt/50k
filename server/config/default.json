@@ -5,5 +5,14 @@
   "paginate": {
     "default": 10,
     "max": 50
+  },
+  "mongodb": "mongodb://mongodb:27017/50_k_server",
+  "wordlist": {
+    "dumpDB": true,
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "urlPatern": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2016/%s/%s_50k.txt"
   }
 }

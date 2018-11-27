@@ -16,6 +16,10 @@ const services = require('./services');
 const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
+const mongoose = require('./mongoose');
+
+const wordlist = require('./wordlist');
+
 const app = express(feathers());
 
 // Load app configuration
@@ -34,12 +38,16 @@ app.use('/', express.static(app.get('public')));
 app.configure(express.rest());
 app.configure(socketio());
 
+app.configure(mongoose);
+
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware);
 // Set up our services (see `services/index.js`)
 app.configure(services);
 // Set up event channels (see channels.js)
 app.configure(channels);
+
+app.configure(wordlist);
 
 // Configure a middleware for 404s and the error handler
 app.use(express.notFound());
